@@ -62,7 +62,7 @@ public class UserRegistration {
           System.out.println("Valid Password");
       }
       {
-          System.out.println("Invalid Password");
+          System.out.println("Invalid password");
   }
   }
   
