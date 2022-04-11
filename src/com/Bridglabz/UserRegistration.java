@@ -16,16 +16,29 @@ public class UserRegistration {
 	            System.out.println("Invalid First Name");
 	    }
   public static void lastName() {
-      System.out.println("Enter First Name");
+      System.out.println("Enter Last Name");
       String ln = sc.nextLine();
       if (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", ln) == true)
           System.out.println("Valid Last Name");
       else
           System.out.println("Invalid Last Name");
   }
+  public static void email() {
+	  System.out.println("Enter Email id ");
+	  String email=sc.nextLine();
+	  if(Pattern.matches("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+(?:\\.[a-zA-Z0-9]+)*$",email)==true);
+	  {
+		  System.out.println("Valid Email");
+	  }
+	  {
+	    System.out.println("Invalid Email");
+	  }
+	  }
+  
 	    public static void main(String[] args) {
 	        firstName();
 	        lastName();
+	        email();
 	    }
 
 	
