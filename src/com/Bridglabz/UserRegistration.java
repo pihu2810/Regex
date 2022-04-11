@@ -57,11 +57,10 @@ public class UserRegistration {
   public static void password() {
 	  System.out.println("Enter the Password");
       String pw = sc.nextLine();
-      if (Pattern.matches("^(?=.*[a-z])\"+\"(?=.*[A-Z])\"+\"(?=.*[@#$%^&+=]){8,}$", pw) == true)
+      if (Pattern.matches("^(?=.*[a-z])\"+\"(?=.*[A-Z]){8,}$", pw) == true)
       {
           System.out.println("Valid Password");
       }
-      else
       {
           System.out.println("Invalid Password");
   }
