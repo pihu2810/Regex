@@ -7,8 +7,10 @@ import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.Collection;
+
 @RunWith(Parameterized.class)
-public class EmailCheckerTest {
+
+ public class EmailCheckerTest {
 	private String inputEmail;
     private Boolean expectedResult;
     private EmailChecker emailChecker;
@@ -46,8 +48,8 @@ public class EmailCheckerTest {
                 {"abc@%*.com",false},
                 {"abc..2002@gamil.com",false},
                 {"abc.gamail.com",false},
-                {"abc@abc@gamail.com",false},
                 {"abc@gamil.com.1a",false},
+                {"abc@abc@gamail.com",false},
                 {"abc@gmail.com.aa.au",false}
         });
     }
